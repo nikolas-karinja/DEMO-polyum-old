@@ -11,9 +11,9 @@ const EntityData = {
 
         modelPaths: [
 
-            `../assets/models/buildings/crops-1.gltf`,
-            `../assets/models/buildings/crops-2.gltf`,
-            `../assets/models/buildings/crops-3.gltf`
+            `assets/models/buildings/crops-1.gltf`,
+            `assets/models/buildings/crops-2.gltf`,
+            `assets/models/buildings/crops-3.gltf`
             
         ],
 
@@ -40,7 +40,7 @@ const EntityData = {
 
         modelPaths: [
 
-            `../assets/models/buildings/granary.gltf`
+            `assets/models/buildings/granary.gltf`
 
         ],
 
@@ -65,7 +65,7 @@ const EntityData = {
 
         modelPaths: [
 
-            `../assets/models/buildings/mill.gltf`
+            `assets/models/buildings/mill.gltf`
 
         ],
 
@@ -88,9 +88,9 @@ const EntityData = {
 
         modelPaths: [
 
-            `../assets/models/nature/trees/oak-darkgreen.gltf`,
-            `../assets/models/nature/trees/oak-green.gltf`,
-            `../assets/models/nature/trees/oak-lightgreen.gltf`
+            `assets/models/nature/trees/oak-darkgreen.gltf`,
+            `assets/models/nature/trees/oak-green.gltf`,
+            `assets/models/nature/trees/oak-lightgreen.gltf`
 
         ],
 

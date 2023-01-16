@@ -30,7 +30,7 @@ class MicroUI extends UI {
 
     toMacro ( chunkIndex ) {
 
-        AudioUtils.play( '../assets/audio/void-transition-in.mp3' )
+        AudioUtils.play( 'assets/audio/void-transition-in.mp3' )
 
         Actors.ui.vignette.out()
 
@@ -46,7 +46,7 @@ class MicroUI extends UI {
 
             Actors.terrain.viewMacro( chunkIndex ).then( () => {
 
-                AudioUtils.play( '../assets/audio/void-transition-out.mp3' )
+                AudioUtils.play( 'assets/audio/void-transition-out.mp3' )
 
                 Actors.ui.macro.show()
                 Actors.ui.vignette.in()

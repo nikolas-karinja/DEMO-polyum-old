@@ -69,7 +69,7 @@ class ToolUI extends UI {
 
     deselect ( button ) {
 
-        AudioUtils.play( '../assets/audio/interface/click-open.mp3', 0.75 )
+        AudioUtils.play( 'assets/audio/interface/click-open.mp3', 0.75 )
 
         button.removeAttribute( 'selected' )
 
@@ -77,7 +77,7 @@ class ToolUI extends UI {
 
     select ( button ) {
 
-        AudioUtils.play( '../assets/audio/interface/click-open.mp3', 0.75 )
+        AudioUtils.play( 'assets/audio/interface/click-open.mp3', 0.75 )
 
         button.setAttribute( 'selected', '' )
 

@@ -3,7 +3,7 @@ const Settings = {
     granaries: 0,
     mills: 0,
     townCenters: 0,
-    faith: 750,
+    faith: 999999999999999999,
     
     build: {
         selected: null,

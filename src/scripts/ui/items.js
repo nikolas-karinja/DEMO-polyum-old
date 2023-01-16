@@ -36,7 +36,7 @@ class Item {
         this.nameElement.innerHTML = this.name
 
         this.photoElement.style.backgroundImage
-            = `url( ../assets/images/interface/items/${ this.photo } )`
+            = `url( assets/images/interface/items/${ this.photo } )`
             
         this.priceElement.innerHTML = `🗲 ${ this.price }`
 
@@ -52,7 +52,7 @@ class Item {
 
         this.element.onclick = function () {
 
-            AudioUtils.play( '../assets/audio/interface/select-person.mp3' )
+            AudioUtils.play( 'assets/audio/interface/select-person.mp3' )
 
             if ( !_this.isSelected ) {
 

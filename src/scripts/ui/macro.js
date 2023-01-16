@@ -27,7 +27,7 @@ class MacroUI extends UI {
 
         this.button.divineVoid.onclick = () => {
 
-            AudioUtils.play( '../assets/audio/interface/click-close.mp3' )
+            AudioUtils.play( 'assets/audio/interface/click-close.mp3' )
 
             Settings.build.selected = null
 
@@ -53,7 +53,7 @@ class MacroUI extends UI {
 
     toMicro () {
 
-        AudioUtils.play( '../assets/audio/void-transition-in.mp3' )
+        AudioUtils.play( 'assets/audio/void-transition-in.mp3' )
 
         Actors.ui.vignette.out()
 
@@ -63,7 +63,7 @@ class MacroUI extends UI {
 
             CursorUtils.set( 'normal' )
 
-            AudioUtils.play( '../assets/audio/void-transition-out.mp3' )
+            AudioUtils.play( 'assets/audio/void-transition-out.mp3' )
 
             this.hide()
 

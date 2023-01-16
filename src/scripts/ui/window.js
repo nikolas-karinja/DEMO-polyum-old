@@ -74,7 +74,7 @@ class EventWindow extends Window {
 
         this.art.appendChild( this.file )
 
-        this.file.style.backgroundImage = `url( ../assets/images/interface/events/${ this.artFile } )`
+        this.file.style.backgroundImage = `url( assets/images/interface/events/${ this.artFile } )`
 
         this.explainButton.setAttribute( 'choice-explain', '' )
         this.explainButton.innerHTML = 'Explain...'
@@ -124,7 +124,7 @@ class WarningWindow extends Window {
 
         super()
 
-        AudioUtils.play( '../assets/audio/interface/select-person.mp3' )
+        AudioUtils.play( 'assets/audio/interface/select-person.mp3' )
 
         warningCount++
 

@@ -23,7 +23,7 @@ class Plot {
             side: Xerxes.constant.side.double
         } )
 
-        new Xerxes.loader.gltf().load( '../assets/models/plot.gltf', ( model ) => {
+        new Xerxes.loader.gltf().load( 'assets/models/plot.gltf', ( model ) => {
 
             this.mesh = new Xerxes.mesh.default( 
                 model.scene.children[ 0 ].geometry, 
