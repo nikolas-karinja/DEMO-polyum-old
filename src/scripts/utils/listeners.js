@@ -125,7 +125,7 @@ function generate () {
                         if ( intersects[ 0 ].object.isChunk &&
                             intersects[ 0 ].object.index != Settings.terrain.chunk.selected ) {
 
-                            AudioUtils.play( '../assets/audio/chunk-select.mp3' )
+                            AudioUtils.play( 'assets/audio/chunk-select.mp3' )
 
                             Actors.terrain.chunks[ Settings.terrain.chunk.selected ]
                                 .hidePlots()
@@ -159,7 +159,7 @@ function generate () {
                                     true
                                 )
     
-                                AudioUtils.play( '../assets/audio/chunk-create.mp3' )
+                                AudioUtils.play( 'assets/audio/chunk-create.mp3' )
     
                                 Actors.terrain.chunks[ Settings.terrain.chunk.selected ]
                                     .hidePlots()
@@ -294,8 +294,6 @@ function generate () {
                     Actors.ui.tooltip.setFromData( 'micro-terrain-chunk' )
                         
                     if ( intersects[ 0 ].object.index != Settings.terrain.chunk.hovered ) {
-    
-                        // AudioUtils.play( '../assets/sounds/chunk-hover.mp3', 0.125 )
     
                         if ( Settings.terrain.chunk.hovered >= 0 ) {
     
@@ -458,7 +456,7 @@ function generate () {
 
         if ( e.target.tagName == 'CHOICE' ) {
 
-            AudioUtils.play( '../assets/audio/interface/click-close.mp3' )
+            AudioUtils.play( 'assets/audio/interface/click-close.mp3' )
 
         }
 

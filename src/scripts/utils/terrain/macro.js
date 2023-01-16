@@ -105,7 +105,7 @@ function buildOnTile ( row, column, name, price, displayWarnings = true, placeVa
 
         if ( displayWarnings ) {
 
-            AudioUtils.play( '../assets/audio/place-entity.mp3' )
+            AudioUtils.play( 'assets/audio/place-entity.mp3' )
 
         }
 
