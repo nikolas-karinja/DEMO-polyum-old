@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,kBAAkB,AAAC,CAEf,gBAAgB,CCCV,iBAAsB,CDA5B,aAAa,CAAE,GAAG,CAClB,KAAK,CAAE,SAAS,CAChB,WAAW,CCPD,cAAc,CDQxB,SAAS,CAAE,IAAI,CACf,WAAW,CAAE,IAAI,CACjB,OAAO,CAAE,EAAE,CACX,OAAO,CAAE,iBAAiB,CAG7B",
+    "sources": [
+        "scss/scene.scss",
+        "scss/variables.scss"
+    ],
+    "names": [],
+    "file": "scene.min.css"
+}

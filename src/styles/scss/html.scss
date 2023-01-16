@@ -1,0 +1,176 @@
+@import './variables.scss';
+
+html, body {
+
+    width: 100vw;
+    height: 100vh;
+
+    margin: 0;
+
+    overflow: hidden;
+    user-select: none;
+
+}
+
+canvas {
+
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    z-index: 1;
+
+    &#debug {
+
+        position: relative;
+
+    }
+
+}
+
+//
+
+vignette {
+
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    box-shadow: inset 0 0 0px white;
+    pointer-events: none;
+
+    z-index: 2;
+
+}
+
+@keyframes vignette-wipe-out {
+
+    from {
+
+        background-color: transparent;
+        box-shadow: inset 0 0 0px white;
+
+    } to {
+
+        background-color: white;
+        box-shadow: inset 0 0 200px white;
+
+    }
+
+}
+
+@keyframes vignette-wipe-in {
+
+    from {
+
+        background-color: white;
+        box-shadow: inset 0 0 200px white;
+
+    } to {
+
+        background-color: transparent;
+        box-shadow: inset 0 0 0px white;
+
+    }
+
+}
+
+//
+
+imp {
+
+    color: aquamarine;
+    font-family: 'Trebuchet MS';
+    font-weight: bold;
+    pointer-events: none;
+
+}
+
+imp-b {
+
+    color: goldenrod;
+    font-family: 'Trebuchet MS';
+    font-style: italic;
+    font-weight: bold;
+    pointer-events: none;
+
+}
+
+//
+
+[ ui ]  {
+
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    pointer-events: none;
+
+    z-index: 1000;
+
+}
+
+@keyframes ui-fade-out {
+
+    from {
+
+        pointer-events: none;
+        opacity: 100%;
+
+    } to {
+
+        pointer-events: none;
+        opacity: 0%;
+
+    }
+    
+}
+
+@keyframes ui-fade-in {
+
+    from {
+
+        opacity: 0%;
+
+    } to {
+
+        opacity: 100%;
+
+    }
+    
+}
+
+//
+
+[ r ] {
+
+    font-family: 'Trebuchet MS';
+    font-weight: bold;
+
+}
+
+faith {
+
+    color: aquamarine;
+
+}
+
+//
+
+::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+::-webkit-scrollbar-track {
+    background: transparent;        /* color of the tracking area */
+  }
+::-webkit-scrollbar-thumb {
+    background-color: #848484;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid $ui-blue;  /* creates padding around scroll thumb */
+  }

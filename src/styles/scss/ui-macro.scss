@@ -1,0 +1,428 @@
+@import './variables.scss';
+
+ui-macro {
+
+    & place {
+
+        position: absolute;
+        left: 0;
+        top: 0;
+
+        height: 40px;
+
+        margin: 0px 0px 0px 50vw;
+            
+        background-color: aquamarine;
+        border-radius:  0px 0px 30px 30px;
+        box-shadow: inset 0 0 20px blue;
+        color: white;
+        font-family: $font-header;
+        font-size: 20px;
+        line-height: 40px;
+        padding: 0px 40px 0px 40px;
+        pointer-events: all;
+        text-align: center;
+        text-shadow: 0 0 5px black;
+        transform: translate( -50%, 0% );
+        transition: 0.15s;
+
+        &:hover {
+
+            height: 50px;
+
+            background-color: blue;
+            box-shadow: inset 0 0 20px aquamarine;
+            line-height: 50px;
+
+        }
+
+    }
+
+    & wealth {
+
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        margin: 10px;
+
+        color: aquamarine;
+        pointer-events: all;
+
+        & amount {
+
+            position: absolute;
+            bottom: 0;
+            left: 0;
+
+            height: 48px;
+
+            background-color: rgba( 0, 33, 94, 0.7 );
+            border-radius: 8px;
+            font-family: 'Trebuchet MS';
+            font-size: 25px;
+            font-weight: bold;
+            line-height: 48px;
+            padding: 0px 10px 0px 58px;
+            transition: 0.15s;
+
+            z-index: 1;
+            
+            &:hover {
+
+                color: white;
+                padding: 0px 20px 0px 68px;
+
+            }
+    
+        }
+
+        & icon {
+
+            position: absolute;
+            bottom: 0;
+            left: 0;
+
+            width: 48px;
+            height: 48px;
+
+            background-color: rgba( 0, 0, 0, 0.4 );
+            border-radius: 8px 0px 0px 8px;
+            font-family: 'Trebuchet MS';
+            font-size: 30px;
+            font-weight: bold;
+            line-height: 48px;
+            text-align: center;
+
+            z-index: 2;
+    
+        }
+
+    }
+
+    //
+
+    & tools {
+
+        position: absolute;
+        left: 0;
+        top: 0;
+
+        width: calc( ( 48px * 6 ) + ( 2px * 1 ) + 16px );
+        height: 48px;
+
+        background-color: $ui-blue;
+        border-radius: 0px 0px 8px 0px;
+        overflow: hidden;
+        pointer-events: all;
+
+        & button {
+
+            position: absolute;
+            left: 0;
+            top: 0;
+
+            width: 48px;
+            height: 48px;
+
+            background-color: transparent;
+            background-image: none;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            border: none;
+            outline: none;
+            padding: 0;
+            transition: 0.15s;
+
+            cursor: url( ../../assets/images/interface/pointers/pointer-inspect.png ), auto;
+
+            &:hover {
+
+                background-color: $ui-blue-mid;
+
+            }
+
+            &[ selected ] {
+
+                background-color: goldenrod;
+                box-shadow: inset 0 0 10px black;
+
+            }
+
+            &#disasters {
+
+                margin-left: 160px;
+
+                background-image: url( ../../assets/images/interface/icons/tool-disasters.png );
+
+            }
+
+            &#flora {
+
+                margin-left: 16px;
+
+                background-image: url( ../../assets/images/interface/icons/tool-flora.png );
+
+            }
+
+            &#monuments {
+
+                margin-left: 112px;
+
+                background-image: url( ../../assets/images/interface/icons/tool-monuments.png );
+
+            }
+
+            &#structures {
+
+                margin-left: 64px;
+
+                background-image: url( ../../assets/images/interface/icons/tool-structures.png );
+
+            }
+
+            &#stats {
+
+                margin-left: 258px;
+
+                background-image: url( ../../assets/images/interface/icons/tool-stats.png );
+
+            }
+
+            &#tasks {
+
+                margin-left: 210px;
+
+                background-image: url( ../../assets/images/interface/icons/tool-tasks.png );
+
+            }
+
+        }
+
+        & detail {
+
+            position: absolute;
+            left: 0;
+            top: 0;
+
+            width: 16px;
+            height: 100%;
+
+            background-color: $ui-blue-header;
+
+        }
+
+        & divider {
+
+            position: absolute;
+            left: 0;
+            top: 0;
+
+            width: 2px;
+            height: 100%;
+
+            background-color: $ui-blue-top;
+
+            &#first {
+
+                margin-left: 208px;
+
+            }
+
+        }
+
+    }
+
+    & tab {
+
+        position: absolute;
+        left: 0;
+        top: 0;
+
+        width: calc( ( 128px * 4 ) + ( 16px * 5 ) );
+        height: calc( ( 176px * 4 ) + ( 16px * 5 ) );
+
+        margin-top: 80px;
+
+        background-color: $ui-blue;
+        border-radius: 0px 0px 8px 0px;
+        opacity: 0%;
+        pointer-events: all;
+        transition: 0.15s;
+
+        & detail {
+
+            position: absolute;
+            left: 0;
+            top: 0;
+
+            width: 100%;
+            height: 16px;
+
+            margin-top: -16px;
+
+            background-color: $ui-blue;
+            border-radius: 0px 8px 0px 0px;
+            overflow: hidden;
+
+            & inside {
+
+                position: absolute;
+                left: 0;
+                top: 0;
+
+                width: 100%;
+                height: 100%;
+
+                background-color: $ui-blue-header;
+
+            }
+
+        }
+
+        & item {
+
+            position: absolute;
+            left: 0;
+            top: 0;
+
+            width: 128px;
+            height: 176px;
+
+            background-color: $ui-blue;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: 0.5s;
+
+            animation: item-appear 0.15s ease-out forwards;
+
+            & background {
+
+                position: absolute;
+                left: 0;
+                top: 0;
+
+                width: 128px;
+                height: 128px;
+
+                background-color: $ui-blue-mid;
+                box-shadow: inset 0 0 64px $ui-blue-header;
+                transition: 0.15s;
+
+            }
+
+            & name {
+
+                position: absolute;
+                left: 0;
+                top: 0;
+
+                width: 100%;
+                height: 24px;
+                
+                margin-top: 128px;
+
+                background-color: goldenrod;
+                font-family: $font-header;
+                font-size: 15px;
+                font-weight: bold;
+                line-height: 24px;
+                text-align: center;
+                text-shadow: 0 0 10px white;
+
+            }
+
+            & photo {
+
+                position: absolute;
+                left: 0;
+                top: 0;
+
+                width: 128px;
+                height: 128px;
+
+                background-color: transparent;
+                background-image: url( ../../assets/images/interface/items/oak-tree.png );
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                border: none;
+                padding: 0;
+                transition: 0.15s;
+
+            }
+
+            & price {
+
+                position: absolute;
+                left: 0;
+                top: 0;
+
+                width: 100%;
+                height: 24px;
+                
+                margin-top: 152px;
+
+                color: aquamarine;
+                background-color: $ui-blue-header;
+                font-family: $font-header;
+                font-size: 15px;
+                font-weight: bold;
+                line-height: 24px;
+                text-align: center;
+
+            }
+
+            &:hover {
+
+                transform: scale( 1.1 );
+
+                & background {
+
+                    box-shadow: inset 0 0 64px white;
+
+                }
+
+            }
+
+        }
+
+    }
+
+    @keyframes item-appear {
+        
+        from {
+
+            transform: scale( 0 );
+            
+        } to {
+
+            transform: scale( 1 );
+            
+        }
+
+    }
+
+    @keyframes item-select {
+        
+        0% {
+            
+            box-shadow: inset 0 0 64px white;
+            transform: scale( 1 );
+            
+        } 50% {
+
+            box-shadow: inset 0 0 64px white;
+            transform: scale( 1.1 );
+            
+        } 100% {
+
+            box-shadow: inset 0 0 64px white;
+            transform: scale( 1 );
+            
+        }
+
+    }
+
+}

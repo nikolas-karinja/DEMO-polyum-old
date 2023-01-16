@@ -1,0 +1,67 @@
+tooltip {
+
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    max-width: 350px;
+
+    background-color: rgba( 0, 33, 94, 0.7 );
+    border-radius: 8px;
+    color: white;
+    font-family: 'Trebuchet MS';
+    font-size: 15px;
+    font-weight: bold;
+    overflow: hidden;
+    padding: 10px;
+
+    z-index: 1001;
+
+    & content {
+
+        color: white;
+        font-family: 'Helvetica';
+        font-weight: normal;
+
+    }
+
+    & detail {
+
+        color: #848484;
+        font-weight: normal;
+        line-height: 25px;
+
+    }
+
+    & header {
+
+        position: absolute;
+        left: 0;
+        top: 0;
+
+        width: calc( 100% - 20px );
+        height: 30px;
+
+        background-color: rgba( 0, 0, 0, 0.4 );
+        padding: 0px 10px 0px 10px;
+
+        & extra {
+
+            position: absolute;
+            right: 10px;
+            top: 0;
+
+            line-height: 30px;
+    
+        }
+
+        & heading {
+
+            color: turquoise;
+            line-height: 30px;
+    
+        }
+
+    }
+
+}

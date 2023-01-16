@@ -1,0 +1,128 @@
+@import './variables.scss';
+
+ui-micro {
+
+    & wealth {
+
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        margin: 10px;
+
+        color: aquamarine;
+        pointer-events: all;
+
+        & amount {
+
+            position: absolute;
+            bottom: 0;
+            left: 0;
+
+            height: 48px;
+
+            background-color: rgba( 0, 33, 94, 0.7 );
+            border-radius: 8px;
+            font-family: 'Trebuchet MS';
+            font-size: 25px;
+            font-weight: bold;
+            line-height: 48px;
+            padding: 0px 10px 0px 58px;
+            transition: 0.15s;
+
+            z-index: 1;
+            
+            &:hover {
+
+                color: white;
+                padding: 0px 20px 0px 68px;
+
+            }
+    
+        }
+
+        & icon {
+
+            position: absolute;
+            bottom: 0;
+            left: 0;
+
+            width: 48px;
+            height: 48px;
+
+            background-color: rgba( 0, 0, 0, 0.4 );
+            border-radius: 8px 0px 0px 8px;
+            font-family: 'Trebuchet MS';
+            font-size: 30px;
+            font-weight: bold;
+            line-height: 48px;
+            text-align: center;
+
+            z-index: 2;
+    
+        }
+
+    }
+
+    & settlements {
+
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        margin: 0px 0px 68px 10px;
+
+        color: aquamarine;
+        pointer-events: all;
+
+        & amount {
+
+            position: absolute;
+            bottom: 0;
+            left: 0;
+
+            height: 48px;
+
+            background-color: rgba( 0, 33, 94, 0.7 );
+            border-radius: 8px;
+            font-family: 'Trebuchet MS';
+            font-size: 25px;
+            font-weight: bold;
+            line-height: 48px;
+            padding: 0px 10px 0px 58px;
+            transition: 0.15s;
+
+            z-index: 1;
+            
+            &:hover {
+
+                color: white;
+                padding: 0px 20px 0px 68px;
+
+            }
+    
+        }
+
+        & icon {
+
+            position: absolute;
+            bottom: 0;
+            left: 0;
+
+            width: 48px;
+            height: 48px;
+
+            background-color: rgba( 0, 0, 0, 0.4 );
+            background-image: url( ../../assets/images/interface/icons/settlement.png );
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 48px 48px;
+            border-radius: 8px 0px 0px 8px;
+
+            z-index: 2;
+    
+        }
+
+    }
+
+}

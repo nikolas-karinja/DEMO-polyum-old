@@ -1,0 +1,15 @@
+@import './variables.scss';
+
+chunk-entity-label {
+
+    background-color: $ui-blue;
+    border-radius: 8px;
+    color: turquoise;
+    font-family: $font-header;
+    font-size: 15px;
+    font-weight: bold;
+    opacity: 0%;
+    padding: 5px 10px 5px 10px;
+    // transition: opacity 0.15s;
+
+}

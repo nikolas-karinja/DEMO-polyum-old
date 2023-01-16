@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset='UTF-8' />
+
+		<title>Polyum Demo (Old)</title>
+
+		<link rel='stylesheet' href='/src/styles/html.min.css' />
+		<link rel='stylesheet' href='/src/styles/scene.min.css' />
+		<link rel='stylesheet' href='/src/styles/tooltip.min.css' />
+		<link rel='stylesheet' href='/src/styles/ui-macro.min.css' />
+		<link rel='stylesheet' href='/src/styles/ui-micro.min.css' />
+		<link rel='stylesheet' href='/src/styles/window.min.css' />
+	</head>
+
+	<body>
+		<vignette></vignette>
+
+		<tooltip>
+			<header>
+				<heading></heading>
+				<extra></extra>
+			</header>
+
+			<br>
+			<detail></detail><br>
+			<content></content>
+		</tooltip>
+
+		<ui-macro ui>
+			<place>Divine Void</place>
+
+			<wealth>
+				<icon>🗲</icon>
+				<amount></amount>
+			</wealth>
+
+			<tools>
+				<detail></detail>
+
+				<button items id='flora'></button>
+				<button items id='structures'></button>
+				<button items id='monuments'></button>
+				<button items id='disasters'></button>
+
+				<divider id='first'></divider>
+
+				<button id='tasks'></button>
+				<button id='stats'></button>
+			</tools>
+
+			<tab>
+				<detail><inside></inside></detail>
+			</tab>
+		</ui-macro>
+
+		<ui-micro ui>
+			<settlements>
+				<icon></icon>
+				<amount>0</amount>
+			</settlements>
+
+			<wealth>
+				<icon>🗲</icon>
+				<amount></amount>
+			</wealth>
+		</ui-micro>
+
+		<script src='/src/scripts/main.js' type='module'></script>
+	</body>
+</html>
